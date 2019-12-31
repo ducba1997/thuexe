@@ -45,8 +45,8 @@
                                     <div class="col-lg-12 col-md-12 col-sm-7 col-xs-7">
                                         <!-- LOGO -->
                                         <h1>
-                                            <a href="index.html">
-                                                <img src="img/logo5a54.png" alt="Oto Hoàng Anh" class="img-responsive logoimg" />
+                                            <a href="{{url('/')}}">
+                                                <img src="{{url('/img/logo5a54.png')}}" alt="Oto Hoàng Anh" class="img-responsive logoimg" />
                                             </a>
                                         </h1>
                                     </div>
@@ -106,8 +106,16 @@
                                                 <li>
                                                     <a href="#"><i class="fa fa-phone" aria-hidden="true"></i>0999999999</a>
                                                 </li>
-                                                <li><a class="reg" href="account/register.html" title="Đăng ký">ĐĂNG KÝ</a></li>
-                                                <li><a class="log" href="account/login.html" title="Đăng nhập">Đăng nhập</a></li>
+                                                @if(Auth::user())
+                                                <li><a class="reg" href="#" title="{{Auth::user()->name}}">{{Auth::user()->name}}</a></li>
+                                                <li><a class="reg" href="{{url('/logout')}}" title="{{Auth::user()->name}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Đăng xuất <i class="fa fa-arrow-down"></i></a></li>
+                                                <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
+                                                    @csrf
+                                                </form>
+                                                @else
+                                                <li><a class="reg" href="{{url('/register')}}" title="Đăng ký">ĐĂNG KÝ</a></li>
+                                                <li><a class="log" href="{{url('/login')}}" title="Đăng nhập">Đăng nhập</a></li>
+                                                @endif
                                             </ul>
                                         </nav>
                                         <div class="header_line">
@@ -128,7 +136,7 @@
                                     <div class="menu-logo">
                                         <h1 class="logo logo-mobile">
                                             <a href="index.tmdt">
-                                                <img src="img/logo5a54.png" alt="Oto Hoàng Anh" class="img-responsive logoimg" />
+                                                <img src="{{url('/img/logo5a54.png')}}" alt="Oto Hoàng Anh" class="img-responsive logoimg" />
                                             </a>
                                         </h1>
                                         <div class="nav-login">
@@ -230,7 +238,7 @@
                             <ul class="slides">
                                 <li>
                                     <a href="collections/all.html" class="hrv-url">
-                                        <img class="img-responsive" src="img/slideshow_15a54.jpg" alt="Dịch vụ cho thuê; xe" />
+                                        <img class="img-responsive" src="{{url('/img/slideshow_15a54.jpg')}}" alt="Dịch vụ cho thuê; xe" />
                                     </a>
                                     <div id="hrv-banner-caption1" class="hrv-caption hrv-banner-caption">
                                         <div class="container">
@@ -246,7 +254,7 @@
                                 </li>
                                 <li>
                                     <a href="collections/all.html" class="hrv-url">
-                                        <img class="img-responsive" src="img/slideshow_25a54.jpg" alt="Thực phẩm sạch" />
+                                        <img class="img-responsive" src="{{url('/img/slideshow_25a54.jpg')}}" alt="Thực phẩm sạch" />
                                     </a>
                                     <div id="hrv-banner-caption2" class="hrv-caption hrv-banner-caption">
                                         <div class="container">
@@ -262,7 +270,7 @@
                                 </li>
                                 <li>
                                     <a href="collections/all.html" class="hrv-url">
-                                        <img class="img-responsive" src="img/slideshow_35a54.jpg" alt="Th&#225;ng v&#224;ng ưu đ&#227;i" />
+                                        <img class="img-responsive" src="{{url('/img/slideshow_35a54.jpg')}}" alt="Th&#225;ng v&#224;ng ưu đ&#227;i" />
                                     </a>
                                     <div id="hrv-banner-caption3" class="hrv-caption hrv-banner-caption">
                                         <div class="container">
@@ -278,7 +286,7 @@
                                 </li>
                                 <li>
                                     <a href="collections/all.html" class="hrv-url">
-                                        <img class="img-responsive" src="img/slideshow_45a54.jpg" alt="" />
+                                        <img class="img-responsive" src="{{url('/img/slideshow_45a54.jpg')}}" alt="" />
                                     </a>
                                     <div id="hrv-banner-caption4" class="hrv-caption hrv-banner-caption">
                                         <div class="container">
@@ -333,3 +341,6 @@
                     })
                 </script>
             </div>
+        </section>
+    </div>
+    

@@ -22,6 +22,34 @@
                                 </div>
                             </div>
                             <!--Product loop-->
+                            <div class="row content-product-list products-resize">
+                                    <?php
+
+                                        use App\Model\ProductModel;
+                                        $data=ProductModel::all();
+                                        if($data) {
+                                        foreach ($data as $row) {?>
+
+                                        <div class="col-md-3 col-sm-6 col-xs-6 pro-loop">
+                                        <div class="product-block product-resize">
+                                            <div class="product-img image-resize view view-third">
+                                                <a href="products/kia-morning-at.html" title="<?php echo $row['tenxe']; ?>">
+                                                    <img class="first-image" alt=" <?php echo $row['tenxe']; ?> " src="img/<?php echo $row['urlhinhanh']; ?>" />
+                                                </a>
+                                            </div>
+                                            <div class="product-detail clearfix">
+                                                <!-- sử dụng pull-left -->
+                                                <h3 class="pro-name"><a href="products/kia-morning-at.html" title="echo $row['tenxe'];"><?php echo $row['tenxe']; ?> </a></h3>
+                                                <div class="pro-prices">
+                                                    <p class="pro-price"><?php echo $row['giamoi']; ?>₫</p>
+                                                    <p class="pro-price-del text-left"><del class="compare-price"><?php echo $row['giacu']; ?>₫</del></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <?php }
+                                    }else { echo "Chưa có xe nào trong bảng dữ liệu";} ?>
+                                </div>
                             <div class="row">
                                 <div class="col-lg-12 col-sm-12 col-xs-12">
                                     <div class="animation fade-in home-banner-1">
