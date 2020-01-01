@@ -14,6 +14,10 @@ Auth::routes();
 Route::get('/', function () {
     return view('home');
 });
-Route::get('/product/{id}',function (){
-    return view('product.product');
+Route::get('/product/{id}','ProductController@index');
+Route::get('/about', function (){
+	return view('about');
+});	
+Route::get('/introduce', function (){
+	return view('intro');
 });

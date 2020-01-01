@@ -1,0 +1,15 @@
+@extends('layout.master')
+@section('content')
+<section id="content" class="clearfix container">
+						<div class="row">
+							  <div class="col-md-12 col-sm-12 col-xs-12 " id="layout-page">
+<span class="header-page clearfix">
+			 <h1>HƯỚNG DẪN THUÊ XE</h1>
+		</span>
+		<div class="content-page">
+			<h3><span style="text-decoration: underline;" data-mce-style="text-decoration: underline;"><strong>Điều kiện cho thuê xe tự lái:</strong></span></h3><div>1. Bạn phải có bằng lái xe hợp lệ và là bản gốc.</div><div><br></div><div>2. Sổ hộ khẩu (bản chính) có tên bạn (có thể bạn không phải là chủ hộ) và là hộ khẩu tại tỉnh thành nơi bạn đăng ký thuê xe tự lái. (Những trường hợp không có hộ khẩu xin xác nhận tạm trú tại phường đang cư &nbsp;trú)</div><div><br></div><div>3. Tài sản ký cược. Có hai phương án lựa chọn:</div><div><br></div><div>–&nbsp;<span><span style="text-decoration: underline;" data-mce-style="text-decoration: underline;">Phương án 1</span>:</span>&nbsp;Ký cược một chiếc xe máy kèm theo bản chính giấy chứng nhận đăng ký của chính chiếc xe đó và giá trị xe tối thiểu là 20 – 30 triệu.</div><div><span>– <span style="text-decoration: underline;" data-mce-style="text-decoration: underline;">Phương án 2</span>:</span>&nbsp;Nếu không có xe máy, bạn có thể ký cược tại công ty bằng tiền mặt và tối thiểu là 20 -30 &nbsp;triệu đồng. (Số tiền này sẽ được hoàn trả khi bạn thanh lý hợp đồng thuê xe tự lái với công ty).</div><div><br></div><div>Toàn bộ số tiền thuê xe tự lái theo thời gian dự kiến phải thanh toán trước khi bạn nhận xe và sẽ thanh toán thêm nếu có số tiền phụ trội, các giấy tờ và tiền đặt cọc sẽ được hoàn trả sau khi bạn trả xe cho trung tâm.</div><div><br></div><p><span style="text-decoration: underline;" data-mce-style="text-decoration: underline;"><strong>&nbsp;Quy định cho người thuê xe tự lái :</strong></span></p><div>1. Hội tụ đầy đủ các điều kiện về thuê xe tự lái (xem điều kiện cho thuê xe tự lái).</div><div>2. Kiểm tra kỹ càng tình trạng xe khi nhận và ký biên bản bàn giao xe.</div><div>3. Chịu trách nhiệm trước pháp luật trong quá trình sử dụng xe được thuê.</div><div>4. Thời gian thuê theo tiếng hoặc theo ngày tùy theo thỏa thuận trong hợp đồng và mục đích sử dụng.</div><div>5. Người thuê xe phải tự chi trả lương lái xe, xăng dầu, các loại phí cầu đường, bến bãi…</div><div>6. Cấm đem xe đi cầm cố, thế chấp hay giao xe cho người khác sử dụng. Cấm sử dụng xe chở hàng lậu, quốc cấm hay sử dụng vào mục đích vi phạm pháp luật. Cấm đi xe vào đường ngập nước.</div><div>7. Tuân thủ và thực hiện đầy đủ các điều khoản đã ký trong hợp đồng thuê xe</div><div><br></div><div><p><strong>Văn phòng giao dịch tại Nghệ An của Chúng tôi:</strong></p><p><span>Địa chỉ: Bến Thủy, Tp. Vinh, Nghệ An.</span><br>Điện thoại:&nbsp;<span>0988888888</span><br>Email:<a href="mailto:hoanganh@gmail.com" data-mce-href="mailto:hoanganh@gmail.com">hoanganh@gmail.com</a></p></div>
+		</div>
+  </div>
+						</div>
+					</section>
+@endsection

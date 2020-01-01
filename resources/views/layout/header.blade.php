@@ -26,10 +26,10 @@
 <body>
     <nav id="menu-mobile" class="hidden">
         <ul>
-            <li><a href="index.">Trang chủ</a></li>
+            <li><a href="{{url('/')}}">Trang chủ</a></li>
             <li><a href="pages/dieu-khoan-dich-vu.html">Về chúng tôi</a></li>
             <li><a href="collections/all.html">Sản phẩm & Dịch vụ</a></li>
-            <li><a href="pages/about-us.html">Hướng dẫn thuê xe</a></li>
+            <li><a href="pages/about-us.html">Hướng dẫn thuê )xe</a></li>
             <li><a href="collections/dich-vu-sua-chua-bao-duong.html">Sửa chữa & Bảo dưỡng</a></li>
             <li><a href="blogs/news.html">Tin</a></li>
         </ul>
@@ -135,7 +135,7 @@
                                 <div class="mobile-menu-icon-wrapper">
                                     <div class="menu-logo">
                                         <h1 class="logo logo-mobile">
-                                            <a href="index.tmdt">
+                                            <a href="{{url('/')}}">
                                                 <img src="{{url('/img/logo5a54.png')}}" alt="Oto Hoàng Anh" class="img-responsive logoimg" />
                                             </a>
                                         </h1>
@@ -182,12 +182,12 @@
                             <div id="navbar" class="navbar-collapse collapse">
                                 <ul class="nav navbar-nav clearfix">
                                     <li>
-                                        <a href="index.tmdt" class=" current" title="Trang chủ">
+                                        <a href="{{url('/')}}" class=" current" title="Trang chủ">
                                             <span>Trang chủ</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="pages/dieu-khoan-dich-vu.html" class="" title="Về chúng tôi">
+                                        <a href="{{url('/about')}}" class="" title="Về chúng tôi">
                                             <span>Về chúng tôi</span>
                                         </a>
                                     </li>
@@ -197,7 +197,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="pages/about-us.html" class="" title="Hướng dẫn thuê xe">
+                                        <a href="{{url('/introduce')}}" class="" title="Hướng dẫn thuê xe">
                                             <span>Hướng dẫn thuê xe</span>
                                         </a>
                                     </li>

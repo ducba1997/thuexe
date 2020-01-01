@@ -33,7 +33,7 @@
                                         <div class="col-md-3 col-sm-6 col-xs-6 pro-loop">
                                         <div class="product-block product-resize">
                                             <div class="product-img image-resize view view-third">
-                                                <a href="products/kia-morning-at.html" title="<?php echo $row['tenxe']; ?>">
+                                                <a href="{{url('/product/'.$row['id'])}}" title="<?php echo $row['tenxe']; ?>">
                                                     <img class="first-image" alt=" <?php echo $row['tenxe']; ?> " src="img/<?php echo $row['urlhinhanh']; ?>" />
                                                 </a>
                                             </div>
