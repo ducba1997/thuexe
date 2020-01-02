@@ -21,7 +21,12 @@ Route::get('/about', function (){
 Route::get('/introduce', function (){
 	return view('intro');
 });
-Route::get('cart/{id}','CartController@addToCart');
-Route::get('carts', function (){
+Route::get('/cart/{id}','CartController@addToCart');
+Route::get('/cart/del/{id}','CartController@deleteItemCart');
+Route::get('/delAll/','CartController@deleteAllItem');
+Route::get('/carts', function (){
 	return view('cart');
+});
+Route::get('/checkout', function (){
+	return view('checkout');
 });

@@ -62,7 +62,7 @@
                             <div class="col-lg-7 hidden-md hidden-sm hidden-xs">
                                 <aside class="top-info">
                                     <div class="cart-info hidden-xs">
-                                        <a class="cart-link" href="cart.html">
+                                        <a class="cart-link" href="{{url('/carts')}}">
                                             <span class="icon-cart">
                                             </span>
                                             <div class="cart-number">
@@ -104,7 +104,7 @@
                                                         <span class="variant"></span>
                                                         <span class="pro-quantity-view">{{$data['qty']}}</span>
                                                         <span class="pro-price-view">{{$data['item']['giamoi']}}₫</span>
-                                                        <span class="remove_link remove-cart"><a href="javascript:void(0);" onclick="deleteCart(1039173562)"><i class="fa fa-times"></i></a></span>
+                                                        <span class="remove_link remove-cart"><a href="{{url('/cart/del/'.$data['item']['id'])}}" ><i class="fa fa-times"></i></a></span>
                                                     </td>
                                                 </tr>
                                                 @endforeach
@@ -128,8 +128,8 @@
                                                         ₫</td>
                                                 </tr>
                                                 <tr>
-                                                    <td><a href="cart.html" class="linktocart">Xem giỏ hàng</a></td>
-                                                    <td><a href="cart.html" class="linktocheckout">Thanh toán</a></td>
+                                                    <td><a href="{{url('/carts')}}" class="linktocart">Xem giỏ hàng</a></td>
+                                                    <td><a href="{{url('/checkout')}}" class="linktocheckout">Thanh toán</a></td>
                                                 </tr>
                                             </table>
                                         </div>

@@ -17,4 +17,20 @@ class CartController extends Controller
         $request->session()->put('cart',$cart);
         return redirect(url('/'));
     }
+    public function deleteItemCart(Request $request,$id){
+        $oldCart=Session('cart')?Session::get('cart'):null;
+        $cart=new Cart($oldCart);
+        $cart->removeItem($id);
+        $request->session()->put('cart',$cart);
+        return redirect(url('/'));
+    }
+    public function deleteAllItem(Request $request){
+        $oldCart=Session('cart')?Session::get('cart'):null;
+        $cart=new Cart($oldCart);
+        $pr=$cart->items;
+        foreach($pr as $data)
+            $cart->removeItem($data['item']['id']);
+        $request->session()->put('cart',$cart);
+        return redirect(url('/'));
+    }
 }

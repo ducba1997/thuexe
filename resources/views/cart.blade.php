@@ -50,7 +50,8 @@ $product = $oldcart->items;
                                     </td>
                                     <td class="price">{{$data['item']['giamoi']}} ₫</td>
                                     <td class="remove">
-                                        <a href="/cart/change?line=1&amp;quantity=0" class="cart">Xóa</a>
+                                        <a href="
+                                        {{url('/cart/del/'.$data['item']['id'])}}" class="cart">Xóa</a>
                                     </td>
                                 </tr>
 @endforeach
