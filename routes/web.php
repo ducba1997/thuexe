@@ -27,6 +27,7 @@ Route::get('/delAll/','CartController@deleteAllItem');
 Route::get('/carts', function (){
 	return view('cart');
 });
+Route::get('checkouts','CartController@checkout');
 Route::get('/checkout', function (){
 	return view('checkout');
 });

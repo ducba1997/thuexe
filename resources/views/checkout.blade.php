@@ -209,7 +209,7 @@
 						<div class="step-footer">
 
 
-							<form id="form_next_step" action="{{url('/delAll')}}" accept-charset="UTF-8" method="get">
+							<form id="form_next_step" action="{{url('/checkouts')}}" accept-charset="UTF-8" method="get">
 								<input name="utf8" type="hidden" value="✓">
 								<button type="submit" class="step-footer-continue-btn btn">
 									<span class="btn-content">Tiến hành thanh toán</span>
