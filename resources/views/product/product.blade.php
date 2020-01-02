@@ -113,22 +113,12 @@
                                 <span>{{$data['giamoi']}} ₫</span><del>{{$data['giacu']}} ₫</del>
 
                             </div>
-                            <form id="add-item-form" action="" onsubmit="return false;" method="post" class="variants clearfix">
-                                <div class="select-wrapper ">
-                                    <label>Số lượng</label>
-                                    <input id="quantity" type="number" name="quantity" min="1" value="1" class="tc item-quantity">
-                                </div>
+                            <form id="{{url('/cart'.$data['id'])}}" action="" onsubmit="return false;" method="get" class="variants clearfix">
 
                                 <div class="row">
                                     <div class="col-lg-6 col-md-12 col-sm-6 col-xs-12">
-                                        <button id="add-to-cart" class=" btn-detail btn-color-add btn-min-width btn-mgt addtocart-modal" name="add">
+                                        <button id="add-to-cart" class=" btn-detail btn-color-add btn-min-width btn-mgt addtocart-modal" type="submit">
                                             Thêm vào giỏ
-                                        </button>
-                                    </div>
-
-                                    <div class="col-lg-6 col-md-12 col-sm-6 col-xs-12">
-                                        <button id="buy-now" class=" btn-detail btn-color-buy btn-min-width btn-mgt">
-                                            Mua ngay
                                         </button>
                                     </div>
 

@@ -21,3 +21,7 @@ Route::get('/about', function (){
 Route::get('/introduce', function (){
 	return view('intro');
 });
+Route::get('cart/{id}','CartController@addToCart');
+Route::get('carts', function (){
+	return view('cart');
+});

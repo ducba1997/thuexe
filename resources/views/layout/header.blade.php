@@ -24,6 +24,7 @@
 </head>
 
 <body>
+
     <nav id="menu-mobile" class="hidden">
         <ul>
             <li><a href="{{url('/')}}">Trang chủ</a></li>
@@ -65,7 +66,11 @@
                                             <span class="icon-cart">
                                             </span>
                                             <div class="cart-number">
+                                                @if(Session::has('cart'))
+                                                {{Session('cart')->totalQty}}
+                                                @else
                                                 0
+                                                @endif
                                             </div>
                                         </a>
                                         <div class="cart-view clearfix" style="display: none;">
@@ -83,15 +88,44 @@
                                                 </tr>
                                             </table>
                                             <table id="cart-view">
+                                                <?php
+
+                                                use App\Cart;
+
+                                                $oldcart = new Cart(Session('cart'));
+                                                $product = $oldcart->items;
+                                                ?>
+                                                @if(Session::has('cart'))
+                                                @foreach($product as $data)
+                                                <tr class="item_2">
+                                                    <td class="img"><a href="{{url('/product/'.$data['item']['id'])}}" title="{{$data['item']['tenxe']}}"><img src="{{url('/img/'.$data['item']['urlhinhanh'])}}" alt="{{$data['item']['tenxe']}}"></a></td>
+                                                    <td>
+                                                        <a class="pro-title-view" href="{{url('/product/'.$data['item']['id'])}}" title="{{$data['item']['tenxe']}}">{{$data['item']['tenxe']}}</a>
+                                                        <span class="variant"></span>
+                                                        <span class="pro-quantity-view">{{$data['qty']}}</span>
+                                                        <span class="pro-price-view">{{$data['item']['giamoi']}}₫</span>
+                                                        <span class="remove_link remove-cart"><a href="javascript:void(0);" onclick="deleteCart(1039173562)"><i class="fa fa-times"></i></a></span>
+                                                    </td>
+                                                </tr>
+                                                @endforeach
+                                                @else
                                                 <tr>
                                                     <td>Hiện chưa có sản phẩm</td>
                                                 </tr>
+                                                @endif
+
                                             </table>
                                             <span class="line"></span>
                                             <table class="table-total">
                                                 <tr>
                                                     <td class="text-left">TỔNG TIỀN:</td>
-                                                    <td class="text-right" id="total-view-cart">0₫</td>
+                                                    <td class="text-right" id="total-view-cart">
+                                                        @if(Session::has('cart'))
+                                                        {{ Session('cart')->totalPrice}}
+                                                        @else
+                                                        0
+                                                        @endif
+                                                        ₫</td>
                                                 </tr>
                                                 <tr>
                                                     <td><a href="cart.html" class="linktocart">Xem giỏ hàng</a></td>
@@ -160,7 +194,14 @@
                                                         <use xmlns:xlink="//www.w3.org/1999/xlink" xlink:href="#icon-add-cart" />
                                                     </svg>
                                                 </span>
-                                                <span id="cart-count" class="cart-number">0</span>
+                                                <span id="cart-count" class="cart-number">
+
+                                                    @if(Session::has('cart'))
+                                                    {{Session('cart')->totalQty}}
+                                                    @else
+                                                    0
+                                                    @endif
+                                                </span>
                                             </a>
                                         </div>
                                     </div>
@@ -343,4 +384,3 @@
             </div>
         </section>
     </div>
-    
