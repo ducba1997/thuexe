@@ -174,7 +174,7 @@
                                             </a>
                                         </h1>
                                         <div class="nav-login">
-                                            <a href="account/login.html" class="cart " title="Tài khoản">
+                                            <a href="#" class="cart " title="Tài khoản">
                                                 <svg class="icon icon-user" viewBox="0 0 32 32">
                                                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-user">
                                                     </use>
@@ -188,7 +188,7 @@
                                                 <span class="icon-bar"></span></a>
                                         </div>
                                         <div id="cart-targets" class="cart">
-                                            <a href="cart.html" class="cart " title="Giỏ hàng">
+                                            <a href="#" class="cart " title="Giỏ hàng">
                                                 <span>
                                                     <svg class="shopping-cart">
                                                         <use xmlns:xlink="//www.w3.org/1999/xlink" xlink:href="#icon-add-cart" />
@@ -207,7 +207,7 @@
                                     </div>
                                     <div class="search-bar-top">
                                         <div class="search-input-top">
-                                            <form action="/search">
+                                            <form action="">
                                                 <input type="hidden" name="type" value="product" />
                                                 <input type="text" name="q" placeholder="Tìm kiếm sản phẩm ..." />
                                                 <button type="submit" class="icon-search">
@@ -233,7 +233,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="collections/all.html" class="" title="Sản phẩm & Dịch vụ">
+                                        <a href="#" class="" title="Sản phẩm & Dịch vụ">
                                             <span>Sản phẩm & Dịch vụ</span>
                                         </a>
                                     </li>
@@ -243,12 +243,12 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="collections/dich-vu-sua-chua-bao-duong.html" class="" title="Sửa chữa & Bảo dưỡng">
+                                        <a href="#" class="" title="Sửa chữa & Bảo dưỡng">
                                             <span>Sửa chữa & Bảo dưỡng</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="blogs/news.html" class="" title="Tin">
+                                        <a href="#" class="" title="Tin">
                                             <span>Tin</span>
                                         </a>
                                     </li>
@@ -259,7 +259,7 @@
                                     <li class="col-md-12">
                                         <div class="search-bar">
                                             <div class="">
-                                                <form action="/search">
+                                                <form action="" onsubmit="return false;">
                                                     <input type="hidden" name="type" value="product" />
                                                     <input type="text" name="q" placeholder="Tìm kiếm..." autocomplete="off" />
                                                 </form>
@@ -278,7 +278,7 @@
                         <div class="hrvslider">
                             <ul class="slides">
                                 <li>
-                                    <a href="collections/all.html" class="hrv-url">
+                                    <a href="#" class="hrv-url">
                                         <img class="img-responsive" src="{{url('/img/slideshow_15a54.jpg')}}" alt="Dịch vụ cho thuê; xe" />
                                     </a>
                                     <div id="hrv-banner-caption1" class="hrv-caption hrv-banner-caption">
@@ -287,14 +287,14 @@
                                                 <div class="hrv-banner-content slider-1">
                                                     <h2 class="hrv-title1">DỊCH VỤ THUÊ XE HÀNG ĐẦU VIỆT NAM</h2>
                                                     <h3 class="hrv-title2">GỌI NGAY: 0999999999</h3>
-                                                    <a href="collections/all.html" class="hrv-url">Xem ngay</a>
+                                                    <a href="#" class="hrv-url">Xem ngay</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="collections/all.html" class="hrv-url">
+                                    <a href="#" class="hrv-url">
                                         <img class="img-responsive" src="{{url('/img/slideshow_25a54.jpg')}}" alt="Thực phẩm sạch" />
                                     </a>
                                     <div id="hrv-banner-caption2" class="hrv-caption hrv-banner-caption">
@@ -303,14 +303,14 @@
                                                 <div class="hrv-banner-content slider-2">
                                                     <h2 class="hrv-title1">THỦ TỤC CHO THUÊ CỰC KỲ ĐƠN GIẢN</h2>
                                                     <h3 class="hrv-title2">GỌI NGAY: 0999999999</h3>
-                                                    <a href="collections/all.html" class="hrv-url">Xem ngay</a>
+                                                    <a href="#" class="hrv-url">Xem ngay</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="collections/all.html" class="hrv-url">
+                                    <a href="#" class="hrv-url">
                                         <img class="img-responsive" src="{{url('/img/slideshow_35a54.jpg')}}" alt="Th&#225;ng v&#224;ng ưu đ&#227;i" />
                                     </a>
                                     <div id="hrv-banner-caption3" class="hrv-caption hrv-banner-caption">
@@ -319,14 +319,14 @@
                                                 <div class="hrv-banner-content slider-3">
                                                     <h2 class="hrv-title1"></h2>
                                                     <h3 class="hrv-title2">DÀN XE ĐỜI MỚI - CHỦNG LOẠI ĐA DẠNG</h3>
-                                                    <a href="collections/all.html" class="hrv-url">Xem ngay</a>
+                                                    <a href="#" class="hrv-url">Xem ngay</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="collections/all.html" class="hrv-url">
+                                    <a href="#" class="hrv-url">
                                         <img class="img-responsive" src="{{url('/img/slideshow_45a54.jpg')}}" alt="" />
                                     </a>
                                     <div id="hrv-banner-caption4" class="hrv-caption hrv-banner-caption">
